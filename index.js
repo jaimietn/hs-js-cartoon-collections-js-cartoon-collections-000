@@ -6,6 +6,9 @@ function dwarfRollCall(dwarves) {
     array.push(`${i+1}. ${dwarves[i]} `)
   }
   return array.join("")
+  
+ dwarves.forEach((dwarf,i)=>array.push(`${i+1}. ${dwarves[i]} `))
+ return array.join(" ")
 }
 
 var planeteerCalls = ["earth", "wind", "fire", "water", "heart"]
